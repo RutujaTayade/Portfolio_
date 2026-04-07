@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Rutuja Tayade</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Rutuja Tayade</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="assets/rutuja_profile.jpeg" alt="Rutuja Tayade Profile pic" />
+      </div> -->
+
+      <div class="polaroid-cluster">
+        <div class="polaroid polaroid--left">
+          <img src="assets/rutuja2.jpg" alt="where it all began" />
+          <p class="polaroid-caption">where it all began</p>
+        </div>
+
+        <div class="polaroid polaroid--right">
+          <img src="assets/profile.jpg" alt="still that same curiosity" />
+          <p class="polaroid-caption">still that same curiosity</p>
+        </div>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, i am</p>
+        <h1 class="title">Rutuja Tayade</h1>
+        <p class="section__text__p2">
+          Java Developer | Computer Science Student | Problem Solver | Tech
+          Enthusiast
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Rutuja_Tayade_JAVA (1).pdf')"
+          >
+            resume
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkedin-logo-transparent-free-png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/rutuja-tayade-15a680357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+            "
+          />
+
+          <img
+            src="assets/GITHUB.jpeg"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/RutujaTayade'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">About me</h1>
+      <div class="section__pic-container">
+        <img
+          src="assets/rutuja-about-pic.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="assets/Experience.jpeg"
+              alt="experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>
+              1 month of experience in Internship <br />
+              frontend development
+            </p>
+          </div>
+          <div class="details-container">
+            <img
+              src="assets/Education-image.png"
+              alt="education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>
+              B.Tech in CSE <br />
+              Diploma in CSE
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a passionate Java developer with a strong foundation in
+            computer science. I have experience in frontend development and am
+            always eager to learn new technologies and improve my skills. I am a
+            problem solver at heart and enjoy tackling complex challenges. I am
+            also a tech enthusiast who loves exploring the latest trends in the
+            industry.
+          </p>
+        </div>
+      </div>
+      <img src="assets/Arrow_image.png" alt="" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="experience-card">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Spring Boot</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="color-container">
+          <div class="article-container">
+            <img
+              src="assets/project1.png"
+              alt="Project One"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = '#'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="color-container">
+          <div class="article-container">
+            <img
+              src="assets/project2.png"
+              alt="Project Two"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = '#'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="color-container">
+          <div class="article-container">
+            <img
+              src="assets/project3.png"
+              alt="Project Three"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = '#'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <p class="section__text__p1">A Glimpse Into My</p>
+      <h1 class="title">Life Outside the Box</h1>
+      <p class="gallery-subtitle">
+        I don't just stare at screens — I stare at sunsets, travel maps, and
+        chai cups.
+      </p>
+
+      <div class="carousel-wrapper">
+        <!-- Row 1: slides LEFT -->
+        <div class="carousel-track track--left">
+          <div class="carousel-slide">
+            <img src="assets/memory1.jpeg" alt="memory 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory2.jpeg" alt="memory 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory3.jpeg" alt="memory 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory4.jpeg" alt="memory 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory5.jpeg" alt="memory 5" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory6.jpeg" alt="memory 6" />
+          </div>
+          <!-- Duplicates for seamless loop -->
+          <div class="carousel-slide">
+            <img src="assets/memory1.jpeg" alt="memory 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory2.jpeg" alt="memory 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory3.jpeg" alt="memory 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory4.jpeg" alt="memory 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory5.jpeg" alt="memory 5" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory6.jpeg" alt="memory 6" />
+          </div>
+        </div>
+
+        <!-- Row 2: slides RIGHT -->
+        <div class="carousel-track track--right">
+          <div class="carousel-slide">
+            <img src="assets/memory7.jpeg" alt="memory 7" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory8.jpeg" alt="memory 8" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory9.jpeg" alt="memory 9" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory10.jpeg" alt="memory 10" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory11.jpeg" alt="memory 11" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory12.jpeg" alt="memory 12" />
+          </div>
+          <!-- Duplicates for seamless loop -->
+          <div class="carousel-slide">
+            <img src="assets/memory7.jpeg" alt="memory 7" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory8.jpeg" alt="memory 8" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory9.jpeg" alt="memory 9" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory10.jpeg" alt="memory 10" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory11.jpeg" alt="memory 11" />
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/memory12.jpeg" alt="memory 12" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Lets Talk</h1>
+
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <img src="assets/email.png" alt="email" class="icon" />
+          </div>
+          <div class="contact-card-text">
+            <p class="contact-label">Email</p>
+            <a href="mailto:rutujatayde410@email.com" class="contact-value"
+              >rutuja@email.com</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <img src="assets/GITHUB.jpeg" alt="linkedin" class="icon" />
+          </div>
+          <div class="contact-card-text">
+            <p class="contact-label">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/rutuja-tayade-15a680357"
+              target="_blank"
+              class="contact-value"
+              >linkedin.com/in/rutuja-tayade</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <img src="assets/GITHUB.jpeg" alt="github" class="icon" />
+          </div>
+          <div class="contact-card-text">
+            <p class="contact-label">GitHub</p>
+            <a
+              href="https://github.com/RutujaTayade"
+              target="_blank"
+              class="contact-value"
+              >github.com/RutujaTayade</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p class="contact-tagline">
+        Open to opportunities, collaborations, or just a friendly hello 👋
+      </p>
+
+      <div class="contact-footer">
+        <p>© 2026 Rutuja Tayade &nbsp;·&nbsp; Designed & Built with ♡</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
